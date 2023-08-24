@@ -90,34 +90,17 @@ if game.PlaceId == 14236123211 then
       end,
    })
 
-   local Forest2HatchToggle = EggTab:CreateToggle({  
-      Name = "Hatch Forest 2 Egg",
-      CurrentValue = false,
-      Flag = "Toggle3", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-      Callback = function(Value)
-         getgenv().autohatch2 = Value;
-
-         while autohatch2 do
-            local args = {
-               [1] = "2"
-           }
-       
-           game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
-           wait()
-         end   
-      end,
-   })
 
    local DesertHatchToggle = EggTab:CreateToggle({
       Name = "Hatch Desert Egg",
       CurrentValue = false,
-      Flag = "Toggle4", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Flag = "Toggle3", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
       Callback = function(Value)
          getgenv().autohatch3 = Value;
 
          while autohatch3 do
             local args = {
-               [1] = "3"
+               [1] = "2"
            }
        
            game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
@@ -129,13 +112,13 @@ if game.PlaceId == 14236123211 then
    local CaveHatchToggle = EggTab:CreateToggle({
       Name = "Hatch Cave Egg",
       CurrentValue = false,
-      Flag = "Toggle5", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Flag = "Toggle4", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
       Callback = function(Value)
          getgenv().autohatch4 = Value;
 
          while autohatch4 do
             local args = {
-               [1] = "4"
+               [1] = "3"
            }
        
            game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
@@ -146,6 +129,24 @@ if game.PlaceId == 14236123211 then
 
    local OceanHatchToggle = EggTab:CreateToggle({
       Name = "Hatch Ocean Egg",
+      CurrentValue = false,
+      Flag = "Toggle5", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Callback = function(Value)
+         getgenv().autohatch5 = Value;
+
+         while autohatch5 do
+            local args = {
+               [1] = "4"
+           }
+       
+           game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
+           wait()
+         end   
+      end,
+   })
+
+   local CandyHatchToggle = EggTab:CreateToggle({
+      Name = "Hatch Candy Egg",
       CurrentValue = false,
       Flag = "Toggle6", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
       Callback = function(Value)
@@ -162,5 +163,189 @@ if game.PlaceId == 14236123211 then
       end,
    })
 
+   local SnowHatchToggle = EggTab:CreateToggle({
+      Name = "Hatch Snow Egg",
+      CurrentValue = false,
+      Flag = "Toggle7", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Callback = function(Value)
+         getgenv().autohatch5 = Value;
+
+         while autohatch5 do
+            local args = {
+               [1] = "6"
+           }
+       
+           game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
+           wait()
+         end   
+      end,
+   })
+
+   local ToyHatchToggle = EggTab:CreateToggle({
+      Name = "Hatch Toy Egg",
+      CurrentValue = false,
+      Flag = "Toggle8", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Callback = function(Value)
+         getgenv().autohatch5 = Value;
+
+         while autohatch5 do
+            local args = {
+               [1] = "7"
+           }
+       
+           game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
+           wait()
+         end   
+      end,
+   })
+
+   local FarmHatchToggle = EggTab:CreateToggle({
+      Name = "Hatch Farm Egg",
+      CurrentValue = false,
+      Flag = "Toggle9", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Callback = function(Value)
+         getgenv().autohatch5 = Value;
+
+         while autohatch5 do
+            local args = {
+               [1] = "8"
+           }
+       
+           game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
+           wait()
+         end   
+      end,
+   })
+
+   local SamuraiHatchToggle = EggTab:CreateToggle({
+      Name = "Hatch Samurai Egg",
+      CurrentValue = false,
+      Flag = "Toggle10", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Callback = function(Value)
+         getgenv().autohatch5 = Value;
+
+         while autohatch5 do
+            local args = {
+               [1] = "9"
+           }
+       
+           game:GetService("ReplicatedStorage").Events.PlayerPressedKeyOnEgg:FireServer(unpack(args))
+           wait()
+         end   
+      end,
+   })
+
+   --Teleports
+   local TeleportTab = Window:CreateTab("🌀Teleport", nil)
+
+   local TeleportSection = TeleportTab:CreateSection("Locations (Must have the Island unlocked with gems.)")
+
+   local ForestButton = TeleportTab:CreateButton({
+      Name = "Teleport to Forest ",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 1
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local DesertButton = TeleportTab:CreateButton({
+      Name = "Teleport to Desert",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 2
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local CaveButton = TeleportTab:CreateButton({
+      Name = "Teleport to Cave",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 3
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local OceanButton = TeleportTab:CreateButton({
+      Name = "Teleport to Ocean",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 4
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local CandyButton = TeleportTab:CreateButton({
+      Name = "Teleport to Candy",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 5
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local SnowButton = TeleportTab:CreateButton({
+      Name = "Teleport to Snow",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 6
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local ToyButton = TeleportTab:CreateButton({
+      Name = "Teleport to Toy",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 7
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local FarmButton = TeleportTab:CreateButton({
+      Name = "Teleport to Farm",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 8
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
+
+   local SamuraiButton = TeleportTab:CreateButton({
+      Name = "Teleport to Samurai",
+      Callback = function()
+         local args = {
+            [1] = "Teleport",
+            [2] = 9
+        }
+
+        game:GetService("ReplicatedStorage").Events.TeleportEvent:InvokeServer(unpack(args))
+      end,
+   })
  
 end
