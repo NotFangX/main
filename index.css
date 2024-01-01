@@ -1,0 +1,175 @@
+body{
+    background-color: black;
+}
+
+#descriptiontext {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background: none;
+    margin-top: 20px;
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(ai-generated-8322792_1280.webp);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+#ComText {
+    background-color: black;
+    color: white;
+    height: 1000px;
+    margin-top: 120%;
+    transition: margin-top 1s;
+    align-items: center;
+}
+
+#ComText:hover{
+    margin-top: 80%;
+}
+
+#communitySpace {
+    background-image: url(arabEntrepreneurs.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    margin: 60px;
+}
+
+#ComTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#ComDetails {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#DawaText {
+    background-color: black;
+    color: white;
+    height: 1000px;
+    margin-top: 120%;
+    transition: margin-top 1s;
+    align-items: center;
+}
+
+#DawaText:hover{
+    margin-top: 80%;
+}
+
+#DawaCorner {
+    background-image: url(dawaCorner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    margin: 60px;
+}
+
+#DawaTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#DawaDetails {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#HubText {
+    background-color: black;
+    color: white;
+    height: 1000px;
+    margin-top: 120%;
+    transition: margin-top 1s;
+    align-items: center;
+}
+
+#HubText:hover{
+    margin-top: 80%;
+}
+
+#KnowledgeHub {
+    background-image: url(knowledgeHub.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    margin: 60px;
+}
+
+#HubTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#HubDetails {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#community{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#communitydesc{
+    display: flex;
+    background-image: url(pixel2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+#communitydesctext a {
+    color: #7289da;
+    text-decoration: none;
+}
+
+#communitydesctext a:hover {
+    text-decoration: underline;
+}
